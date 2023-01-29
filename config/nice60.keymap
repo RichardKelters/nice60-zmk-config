@@ -57,17 +57,17 @@
 		
 		second_layer {
 // ------------------------------------------------------------------------------------------
-// |  ?  |  VOL DOWN  | MUTE  | VOL UP  | ?  | ?  | ?  | ?  | ?  | ?  | ?  | ? | ? |  PAUSE_BREAK |
-// | BT-CLR  |  BT-PREV  |  BT-NEXT  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  HOME  |  DEL  | END |
+// |  ?  |  VOL DOWN  | MUTE  | VOL UP  | ?  | ?  | ?  | ?  | ?  | ?  | ?  | ? | ?  |  PAUSE-BREAK  |
+// | BT-CLR  |  BT-PREV  |  BT-NEXT  |  ?  | ?  | ?  | ?  | ?  | ?  | ?  | ? |  HOME  |  DEL  | END |
 // | ? |  BT-1  |  BT-2  |  BT-3  |  BT-4  |  BT-5  |  H  |  J  |  K  |  L  |  ;  |  PRTSC  |   ENTER   |
-// |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |   PAGE-UP   |     SHIFT      |
-// |  CTRL |  WIN  |  ALT  |            SPACE             |  LEFT  | PAGE-DOWN  |  RIGHT | TO(0) |
+// | UG-ON-OFF | UG-PREV | UG-NEXT | UG-SLOW | UG-FAST |  B  |  N  |  M  |  ,  |  .  |   PAGE-UP   |     SHIFT      |
+// |  ?  |  ?  |  ALT  |            SPACE             |  LEFT  | PAGE-DOWN  |  RIGHT | TO(0) |
 // ------------------------------------------------------------------------------------------
 			bindings = <
 	&none    &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP  &none &none &none &none &none &none &none &none &none  &kp PAUSE_BREAK
 	&bt BT_CLR &bt BT_PRV   &bt BT_NXT  &none         &none &none &none &none &none &none &none &none &none  &none
 	&none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &none &none &none &none &none
-	&trans   &trans &trans &trans &trans &trans &trans &trans &trans &trans    &kp  PG_UP                  &trans
+	&rgb_ug RGB_TOG &rgb_ug RGB_EFR &rgb_ug RGB_EFF &rgb_ug RGB_SPD &rgb_ug RGB_SPI &none &none &none &none &none &kp  PG_UP  &none
 	&trans &trans &trans               &trans                        &trans  &kp PG_DN &to 0   &to 0   
 			>;
 
