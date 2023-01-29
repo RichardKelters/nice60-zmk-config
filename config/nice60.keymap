@@ -49,26 +49,26 @@
 	&kp GRAVE &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12  &kp BSPC
 	&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans    &kp HOME  &kp DEL  &kp END
 	&to 0   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans    &kp PSCRN          &trans
-	&trans   &trans &trans &trans &trans &trans &trans &trans &trans &trans    &kp  UP                  &trans
+	&trans   &trans &trans &trans &trans &trans &trans &trans &trans &trans    &kp UP                   &trans
 	&trans &trans &trans               &trans                        &kp LEFT  &kp DOWN &kp RIGHT        &to 0   
 			>;
 
 		};
 		
 		second_layer {
-// ------------------------------------------------------------------------------------------
-// |  ?  |  VOL DOWN  | MUTE  | VOL UP  | ?  | ?  | ?  | ?  | ?  | ?  | ?  | ? | ?  |  PAUSE-BREAK  |
-// | BT-CLR  |  BT-PREV  |  BT-NEXT  |  ?  | ?  | ?  | ?  | ?  | ?  | ?  | ? |  HOME  |  DEL  | END |
-// | ? |  BT-1  |  BT-2  |  BT-3  |  BT-4  |  BT-5  |  H  |  J  |  K  |  L  |  ;  |  PRTSC  |   ENTER   |
-// | UG-ON-OFF | UG-PREV | UG-NEXT | UG-SLOW | UG-FAST |  B  |  N  |  M  |  ,  |  .  |   PAGE-UP   |     SHIFT      |
-// |  ?  |  ?  |  ALT  |            SPACE             |  LEFT  | PAGE-DOWN  |  RIGHT | TO(0) |
-// ------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------
+// |  ?  |  VOL DOWN  | MUTE  | VOL UP                | ?  | ?  | ?  | ?  | ?  | ?  | ?  | ? | ?  | PAUSE-BREAK |
+// | BT-CLR  |  BT-PREV  |  BT-NEXT                |  ?  | ?  | ?  | ?  | ?  | ?  | ?  | ? |  ?  |  ?  |   ?    |
+// | ? |  BT-1  |  BT-2  |  BT-3  |  BT-4  |  BT-5                |  ?  |  ?  |  ?  |  L  |  ;  |  ?  |    ?    |
+// | UG-ON-OFF | UG-PREV | UG-NEXT | UG-SLOW | UG-FAST | UG-DARK | UG-LGHT | ? |  ? |  ? | PAGE-UP   |    ?     |
+// |  CTRL     |  ?      |  ?      |                   SPACE                      | HOME | PAGE-DOWN |  ? | END |
+// -------------------------------------------------------------------------------------------------------------
 			bindings = <
-	&none    &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP  &none &none &none &none &none &none &none &none &none  &kp PAUSE_BREAK
-	&bt BT_CLR &bt BT_PRV   &bt BT_NXT  &none         &none &none &none &none &none &none &none &none &none  &none
-	&none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &none &none &none &none &none
-	&rgb_ug RGB_TOG &rgb_ug RGB_EFR &rgb_ug RGB_EFF &rgb_ug RGB_SPD &rgb_ug RGB_SPI &none &none &none &none &none &kp  PG_UP  &none
-	&trans &trans &trans               &trans                        &trans  &kp PG_DN &to 0   &to 0   
+	&none    &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP                              &none &none &none &none &none &none &none &none &none  &kp PAUSE_BREAK
+	&bt BT_CLR &bt BT_PRV   &bt BT_NXT  &none                                         &none &none &none &none &none &none &none &none &none      &none
+	&none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                             &none &none &none &none &none &none       &none
+	&rgb_ug RGB_TOG &rgb_ug RGB_EFR &rgb_ug RGB_EFF &rgb_ug RGB_SPD &rgb_ug RGB_SPI &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none &none &none &kp PG_UP  &none
+	&trans &none &none                                        &trans                                                  &kp HOME  &kp PG_DN &to 0 &kp END   
 			>;
 
 		};
