@@ -20,13 +20,17 @@
 
 
 / {
-
+        /*
+          add my own tt layer_tap to work similar as QMK TT()
+          hold is to turn on layer and tap it to toggle layer
+        */
         behaviors {
                 tt: layer_tap {
                     compatible = "zmk,behavior-hold-tap";
                     #binding-cells = <2>;
-                    flavor = "tap-preferred";
+                    flavor = "hold-preferred";
                     tapping-term-ms = <200>;
+                    quick-tap-ms = <150>;
                     bindings = <&mo>, <&to>;
                     display-name = "Layer-Tap";
                 };
