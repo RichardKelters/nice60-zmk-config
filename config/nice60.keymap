@@ -28,7 +28,7 @@
             tt: layer_tap {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
-                flavor = "hold-preferred";
+                flavor = "tap-preferred";
                 tapping-term-ms = <150>;
                 bindings = <&mo>, <&to>;
             };
@@ -65,7 +65,7 @@
         &kp GRAVE &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &kp DEL
         &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans    &kp HOME  &kp DEL  &kp END
         &to DEFAULT  &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans    &kp PSCRN     &trans
-        &trans   &trans &trans &trans &trans &trans &trans &trans &trans &trans    &kp FSLH                 &trans
+        &trans   &trans &trans &trans &trans &trans &trans &trans &trans &trans    &kp FSLH              &kp RSHFT
         &trans &trans &trans               &trans                    &to SECOND &kp K_CMENU &mo SECOND &to DEFAULT
                         >;
 
