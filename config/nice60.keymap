@@ -25,17 +25,15 @@
           hold is to turn on layer and tap it to toggle layer
         */
         behaviors {
-                tt: layer_tap {
-                    compatible = "zmk,behavior-hold-tap";
-                    #binding-cells = <2>;
-                    flavor = "hold-preferred";
-                    quick-tap-ms = <150>;
-                    bindings = <&mo>, <&to>;
-                    display-name = "Layer-Tap";
-                };
+            tt: layer_tap {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                flavor = "hold-preferred";
+                tapping-term-ms = <110>;
+                bindings = <&mo>, <&to>;
+            };
         };
-
-        keymap {
+            keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
