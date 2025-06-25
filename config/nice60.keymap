@@ -14,7 +14,7 @@
 
 #include <dt-bindings/zmk/behaviors.h>
 #include <behaviors.dtsi>
- 
+
 // from https://zmk.dev/docs/keymaps/behaviors/hold-tap?examples=mo_tog#custom-hold-tap-configuration
 // see tab Tog-Tap, Mo-Hold Layers
 
@@ -34,7 +34,7 @@
             tt: behavior_tt {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
-                flavor = "hold-preferred";
+                flavor = "tap-preferred";
                 tapping-term-ms = <150>;
                 bindings = <&mo>, <&to>;
             };
