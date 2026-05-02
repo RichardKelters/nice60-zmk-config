@@ -81,16 +81,16 @@
 // -------------------------------------------------------------------------------------------------------------
 // |  ?  |  VOL DOWN  | MUTE  | VOL UP                | ?  | ?  | ?  | ?  | ?  | ?  | ?  | ? | ?  | PAUSE-BREAK |
 // | BT-CLR  |  BT-PREV  |  BT-NEXT                |  ?  | ?  | ?  | ?  | ?  | ?  | ?  | ? |  ?  |  ?  |   ?    |
-// | TO(0) |  BT-1  |  BT-2  |  BT-3  |  BT-4  |  BT-5            |  ?  |  ?  |  ?  |  L  |  ;  |  ?  |    ?    |
+// | TO(0) |  BT-1  |  BT-2  |  BT-3  |  BT-4  |  BT-5  | UG-HUE- | UG-HEU+ | UG-SAT- | UG-SAT+ | ? | ? |   ?   |
 // | UG-ON-OFF | UG-PREV | UG-NEXT | UG-SLOW | UG-FAST | UG-DARK | UG-LGHT | ? |  ? |  ? | PAGE-UP   |    ?     |
 // |  CTRL     |  ?      |  ?      |                   SPACE                    | HOME | PAGE-DOWN | END | TO(0)|
 // -------------------------------------------------------------------------------------------------------------
                         bindings = <
-        &none    &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP                              &none &none &none &none &none &none &none &none &none  &kp PAUSE_BREAK
-        &bt BT_CLR &bt BT_PRV   &bt BT_NXT  &none                                         &none &none &none &none &none &none &none &none &none      &none
-        &to DEFAULT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                       &none &none &none &none &none &none       &none
-        &rgb_ug RGB_TOG &rgb_ug RGB_EFR &rgb_ug RGB_EFF &rgb_ug RGB_SPD &rgb_ug RGB_SPI &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none &none &none &kp PG_UP  &none
-        &trans &none &none                                        &trans                                          &kp HOME  &kp PG_DN  &kp END &to DEFAULT
+        &none    &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP                                               &none &none &none &none &none &none &none &none &none  &kp PAUSE_BREAK
+        &bt BT_CLR &bt BT_PRV   &bt BT_NXT                                                               &none &none &none &none &none &none &none &none &none &none  &none
+        &to DEFAULT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI  &none &none    &none
+        &rgb_ug RGB_TOG &rgb_ug RGB_EFR &rgb_ug RGB_EFF &rgb_ug RGB_SPD &rgb_ug RGB_SPI &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none &none &none    &kp PG_UP                &none
+        &trans &none &none                                        &trans                                                           &kp HOME  &kp PG_DN  &kp END &to DEFAULT
                         >;
 
                 };
