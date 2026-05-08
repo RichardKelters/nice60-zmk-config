@@ -24,7 +24,10 @@
 #define FIRST 1
 #define SECOND 2
 
-
+// from https://zmk.dev/docs/features/lighting#rgb-underglow
+&led_strip {
+    chain-length = <12>;
+};
 / {
         /*
           add my own tt layer_tap to work similar as QMK TT()
